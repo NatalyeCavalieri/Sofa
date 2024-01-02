@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d9cdf7;
+  display: grid;
+  place-content: center;
+}
+
+#app {
+  display: flex;
+}
+
+section.sofa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 450px;
+  position: relative;
+}
+
+button.buttonTurn {
+  border: none;
+  background: none;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+
+}
+
+
+.buttonStop,
+.sofaTurning{
+  display: none;
+}
+
+html.animated .buttonTurn,
+html.animated .sofaStatic{
+  display: none;
+}
+
+html.animated .buttonStop,
+html.animated .sofaTurning{
+  display: initial;
+}
+
+
+
+section.description {
+  width: 280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 12px;
+  margin: auto 70px;
+}
+
+section.description p:nth-child(1) {
+  color: #271a45;
+  font-size: 10px;
+}
+
+section.description p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+section.description h1 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.description button {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #271a45;
+  background: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-top: 8px;
+  border: 0.5px solid #271a45;
+  cursor: pointer;
+}
+
+.buttonStop {
+  background: none;
+  border: none;
+  position: relative;
+  top: 30px;
+  left: 150px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.buttonTurn img {
+  position: absolute;
+  right: 50px;
+}
+
+
+.sofaTurning {
+  width: 450px;
+}
+
+.sofaStatic{
+  width: 450px;
+}
