@@ -1,4 +1,4 @@
- <h1>Sofá Margot II - Rosé</h1>
+ <h1 align= "center">Sofá Margot II - Rosé</h1>
   <img src="./assets/sofa.gif">
 
   > Status: Completed ✔️ 
